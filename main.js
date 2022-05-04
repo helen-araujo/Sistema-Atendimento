@@ -13,8 +13,8 @@ funcionario = document.querySelector('[data-id="funcionario"]');
 servico = document.querySelector('[data-id="servico"]');
 tableData = document.querySelector('[data-id="tableData"]');
 
-function salvar(data, matricula, nomeCliente, tipoCliente, funcionario, servico) {
+function salvar() {
     tableData.textContent = data.value;
 
 }
-salvar.addEventListener('click', salvar(data);
+salvar.addEventListener('click', salvar);
