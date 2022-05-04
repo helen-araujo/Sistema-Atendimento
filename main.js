@@ -11,15 +11,10 @@ nomeCliente = document.querySelector('[data-id="nomeCliente"]');
 tipoCliente = document.querySelector('[data-id="tipoCliente"]');
 funcionario = document.querySelector('[data-id="funcionario"]');
 servico = document.querySelector('[data-id="servico"]');
+tableData = document.querySelector('[data-id="tableData"]');
 
-function Salvar(data, matricula, nomeCliente, tipoCliente, funcionario, servico) {
-    data.textContent = this.data;
-    matricula.textContent = this.matricula;
-    nomeCliente.textContent = this.nomeCliente;
-    tipoCliente.textContent = this.tipoCliente;
-    funcionario.textContent = this.funcionario;
-    servico.textContent = this.servico;
-    alert('Informações salvas!');
+function salvar(data, matricula, nomeCliente, tipoCliente, funcionario, servico) {
+    tableData.textContent = data.value;
 
 }
-salvar.addEventListener('click', Salvar);
+salvar.addEventListener('click', salvar(data);
