@@ -15,6 +15,7 @@ tableData = document.querySelector('[data-id="tableData"]');
 
 function salvar() {
     tableData.textContent = data.value;
+    console.log('ok')
 
 }
 salvar.addEventListener('click', salvar);
