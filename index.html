@@ -7,26 +7,26 @@
 
 <body>
     <h1 class="titulo">Registro de Atendimentos</h1>
-    <div class=""></div>
+
     <div class="form">
         <label>Data</label>
-        <input type="text" data-data="data" class="entrada-numero">
+        <input type="text" data-id="data" class="entrada-numero">
 
         <label>Cliente</label>
-        <select class="opcoes">
+        <select class="opcoes" data-id="tipoCliente">
             <option >Beneficiário</option>
             <option>Prestador</option>
             <option>Outro</option>
         </select>
 
         <label>Nome</label>
-        <input type="text" data-tipo="nome" class="entrada">
+        <input type="text" data-id="nomeCliente" class="entrada">
         <br>
         <label>Matricula</label>
-        <input type="text" data-matricula="matricula" class="entrada-numero">
+        <input type="text" data-id="matricula" class="entrada-numero">
 
         <label>Funcionario</label>
-        <select class="opcoes">
+        <select class="opcoes" data-id="funcionario">
             <option> Maria </option>
             <option> Rosa </option>
             <option>Bruna </option>
@@ -34,11 +34,22 @@
         <br>
         <br>
         <label> Serviço </label>
-        <input type="text" data-servico="servico" class="entrada-servico">
+        <input type="text" data-id="servico" class="entrada-servico">
 
         <input type="submit" value="SALVAR" class="salvar">
 
+        <div class="imprimir">
+            <p class="data"></p>
+            <p class="nomeCliente"></p>
+            <p class="matricula"></p>
+            <p class="funcionario"></p>
+            <p class="servico"></p>
+        </div>
+
 
 </body>
+<script type="text" src="./main.js">
+
+</script>
 
 </html>
