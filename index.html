@@ -7,7 +7,7 @@
 
 <body>
     <h1 class="titulo">Registro de Atendimentos</h1>
-    <h2 class="tableData"></h2>
+
 
     <div class="form">
         <label>Data</label>
@@ -37,11 +37,12 @@
         <label> Serviço </label>
         <input type="text" data-id="servico" class="entrada-servico">
 
-        <input type="submit" value="SALVAR" class="salvar">
+        <input type="submit" value="SALVAR" class="salvar" data-id="bottonSalvar">
 
         <div class="imprimir">
             <p class="data"></p>
             <p class="nomeCliente"></p>
+            <p class="tipoCliente"></p>
             <p class="matricula"></p>
             <p class="funcionario"></p>
             <p class="servico"></p>
@@ -49,8 +50,7 @@
 
 
 </body>
-<script type="text" src="./main.js">
-
+<script src="main.js">
 </script>
 
 </html>
